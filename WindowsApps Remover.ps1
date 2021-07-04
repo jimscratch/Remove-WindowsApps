@@ -1,4 +1,5 @@
 $host.UI.RawUI.WindowTitle = "Remove WindowsApps"
+#Removes WindowsApps + Friends from a drive if you reinstalled windows or encountered errors.
 Write-Host "Remove WindowsApps verified safe, used, and created by Zezypisa."
 Write-Host "Make sure to run this with Administrator, or it will not work."
 Write-Host "Use this at your own risk."

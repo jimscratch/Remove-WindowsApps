@@ -1,5 +1,5 @@
 # WindowsApps-Remover
-Removes WindowsApps + Friends from a drive if you reinstalled windows or encountered errors, 
+Removes WindowsApps + Friends from a drive if you reinstalled windows or encountered errors.
 
 Remove WindowsApps verified safe, used, and created by Zezypisa.
 

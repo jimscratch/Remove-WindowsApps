@@ -8,7 +8,7 @@ $confirmation = Read-Host "Are you Sure You Want To Proceed? [yes\no]"
 if ($confirmation -eq "yes"){
     $drive = Read-Host "Please type the drive you would like to remove or takeown WindowsApps from. [drive letter]"
     $remove = Read-Host "Would you like to takeown or remove the WindowsApps folder. [takeown\remove]"
-    $confirmation = Read-Host "You have selected to"$remove $drive":\, Are you sure you want to do continue? [yes\no]"
+    $confirmation = Read-Host "You have selected to" $remove $drive":\, Are you sure you want to do continue? [yes\no]"
     if ($confirmation -eq "yes"){
         #Takeown DeliveryOptimization
         takeown /f $drive":\DeliveryOptimization" /a /r /d y

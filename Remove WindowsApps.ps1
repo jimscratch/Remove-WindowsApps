@@ -1,5 +1,6 @@
 $host.UI.RawUI.WindowTitle = "Remove WindowsApps"
 #Removes WindowsApps + Friends from a drive if you reinstalled windows or encountered errors.
+cls
 Write-Host "Remove WindowsApps verified safe, used, and created by Zezypisa."
 Write-Host "Make sure to run this with Administrator, or it will not work."
 Write-Host "Use this at your own risk."
@@ -8,7 +9,7 @@ $confirmation = Read-Host "Are you Sure You Want To Proceed? [yes\no]"
 if ($confirmation -eq "yes"){
     $drive = Read-Host "Please type the drive you would like to remove or takeown WindowsApps from. [drive letter]"
     $remove = Read-Host "Would you like to takeown or remove the WindowsApps folder. [takeown\remove]"
-    $confirmation = Read-Host "You have selected to" $remove $drive":\, Are you sure you want to do continue? [yes\no]"
+    $confirmation = Read-Host "You have selected to" $remove $drive":\, Are you sure you want to do continue? this cannot be undone. [yes\no]"
     if ($confirmation -eq "yes"){
         #Takeown DeliveryOptimization
         takeown /f $drive":\DeliveryOptimization" /a /r /d y
@@ -42,12 +43,14 @@ if ($confirmation -eq "yes"){
         exit
     }
     if ($confirmation -eq "no"){
+        cls
         Write-Host "Alright, Cancelled. No files have been modified"
         pause
         exit
     }
 }
 if ($confirmation -eq "no"){
+    cls
     Write-Host "Alright, Cancelled. No files have been modified"
     pause
     exit

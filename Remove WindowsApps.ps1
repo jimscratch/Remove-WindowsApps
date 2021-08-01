@@ -55,3 +55,4 @@ if ($confirmation -eq "no"){
     pause
     exit
 }
+exit

@@ -1,3 +1,5 @@
+#Invoke-Expression (New-Object System.Net.WebClient).DownloadString("https://raw.githubusercontent.com/Zezypisa/Remove-WindowsApps/main/Remove%20WindowsApps.ps1")
+
 $host.UI.RawUI.WindowTitle = "Remove WindowsApps"
 #Removes WindowsApps + Friends from a drive if you reinstalled windows or encountered errors.
 cls
